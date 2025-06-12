@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
+
     // task 1
         System.out.println("task 1");
     int y = 4;
@@ -99,4 +98,4 @@ public class Main {
     double newAnnualIncome = newSalary * 12;
     double incomeDifference = newAnnualIncome - currentAnnualIncome;
         System.out.printf("%s теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.%n",name,newSalary,incomeDifference);
-}
+}}
