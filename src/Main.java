@@ -11,7 +11,7 @@ public class Main {
     double d = 9.1;
 
     // task 2
-        System.out.println("task 2")
+        System.out.println("task 2");
     double value1 = 27.12;
     long value2 = 987678965549L;
     double value3 = 2.786;
@@ -47,15 +47,16 @@ public class Main {
         System.out.printf("За 1 месяц машина произвела %d штук бутылок%n",productionForOneMonth);
 
     // task 5
-        System.out.println("task 4")
+        System.out.println("task 5");
     int totalCans = 120;
-    int classes = totalCans / 6;
+    int paint = 2 + 4;
+    int classes = totalCans / paint;
     int whiteCans = 2 * classes;
     int brownCans = 4 * classes;
         System.out.printf("В школе, где %d классов, нужно %d банок белой краски и %d банок коричневой краски.%n",classes,whiteCans,brownCans);
 
     // task 6
-        System.out.println("task 6")
+        System.out.println("task 6");
     int bananasCount = 5;
     int bananaWeight = 80;
     int milkVolume = 200;
@@ -72,7 +73,7 @@ public class Main {
         System.out.printf("Общий вес спортзавтрака: %.2f килограммов\n",totalWeightInKilograms);
 
     // task 7
-        System.out.println("task 7")
+        System.out.println("task 7");
     int weightToLose = 7000;
     int lossPerDayLow = 250;
     int lossPerDayHigh = 500;
@@ -84,18 +85,25 @@ public class Main {
         System.out.printf("Среднее количество дней для достижения результата: %.2f дней\n",averageDays);
 
     // task 8
-        System.out.println("task 8")
-    String[] names = {"Маша", "Денис", "Кристина"};
-    double[] currentSalaries = {67760, 83690, 76230};
-    double increasePercentage = 0.10;
-    for(
-    int i = 0;
-    i<names.length;i++)
-    String name = names[i];
-    double currentSalary = currentSalaries[i];
-    double newSalary = currentSalary * (1 + increasePercentage);
-    double currentAnnualIncome = currentSalary * 12;
-    double newAnnualIncome = newSalary * 12;
-    double incomeDifference = newAnnualIncome - currentAnnualIncome;
-        System.out.printf("%s теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.%n",name,newSalary,incomeDifference);
-}}
+        System.out.println("task 8");
+    double mashaSalary = 67760;
+    double denisSalary = 83690;
+    double kristinaSalary = 76230;
+    double mashaNewSalary = mashaSalary * 1.1;
+    double denisNewSalary = denisSalary * 1.1;
+    double kristinaNewSalary = kristinaSalary * 1.1;
+    double mashaAnnualIncomeBefore = mashaSalary * 12;
+    double mashaAnnualIncomeAfter = mashaNewSalary * 12;
+    double mashaIncomeDifference = mashaAnnualIncomeAfter - mashaAnnualIncomeBefore;
+    double denisAnnualIncomeBefore = denisSalary * 12;
+    double denisAnnualIncomeAfter = denisNewSalary * 12;
+    double denisIncomeDifference = denisAnnualIncomeAfter - denisAnnualIncomeBefore;
+    double kristinaAnnualIncomeBefore = kristinaSalary * 12;
+    double kristinaAnnualIncomeAfter = kristinaNewSalary * 12;
+    double kristinaIncomeDifference = kristinaAnnualIncomeAfter - kristinaAnnualIncomeBefore;
+         System.out.printf("Маша теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.%n", mashaNewSalary, mashaIncomeDifference);
+         System.out.printf("Денис теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.%n", denisNewSalary, denisIncomeDifference);
+         System.out.printf("Кристина теперь получает %.2f рублей. Годовой доход вырос на %.2f рублей.%n", kristinaNewSalary, kristinaIncomeDifference);
+            }
+        }
+
